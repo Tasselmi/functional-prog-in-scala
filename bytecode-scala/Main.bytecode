@@ -1,0 +1,49 @@
+Classfile /home/liangfan/learning/scala/functional-prog-in-scala/scala3/target/scala-3.2.1/classes/org/geekbang/jvm/part01/Main.class
+  Last modified Feb 20, 2023; size 355 bytes
+  MD5 checksum ef34624152998e628c9aa98ffe760115
+  Compiled from "Passenger.scala"
+public final class org.geekbang.jvm.part01.Main
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+   #1 = Utf8               org/geekbang/jvm/part01/Main
+   #2 = Class              #1             // org/geekbang/jvm/part01/Main
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Passenger.scala
+   #6 = Utf8               main
+   #7 = Utf8               ([Ljava/lang/String;)V
+   #8 = Utf8               org/geekbang/jvm/part01/Main$
+   #9 = Class              #8             // org/geekbang/jvm/part01/Main$
+  #10 = Utf8               MODULE$
+  #11 = Utf8               Lorg/geekbang/jvm/part01/Main$;
+  #12 = NameAndType        #10:#11        // MODULE$:Lorg/geekbang/jvm/part01/Main$;
+  #13 = Fieldref           #9.#12         // org/geekbang/jvm/part01/Main$.MODULE$:Lorg/geekbang/jvm/part01/Main$;
+  #14 = NameAndType        #6:#7          // main:([Ljava/lang/String;)V
+  #15 = Methodref          #9.#14         // org/geekbang/jvm/part01/Main$.main:([Ljava/lang/String;)V
+  #16 = Utf8               Code
+  #17 = Utf8               Signature
+  #18 = Utf8               SourceFile
+  #19 = Utf8               TASTY
+  #20 = Utf8               Scala
+{
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field org/geekbang/jvm/part01/Main$.MODULE$:Lorg/geekbang/jvm/part01/Main$;
+         3: aload_0
+         4: invokevirtual #15                 // Method org/geekbang/jvm/part01/Main$.main:([Ljava/lang/String;)V
+         7: return
+    Signature: #7                           // ([Ljava/lang/String;)V
+}
+SourceFile: "Passenger.scala"
+Error: unknown attribute
+  TASTY: length = 0x10
+   00 BC BA 1A 5B 75 3A 00 00 B9 F9 97 AB 02 8D 00
+
+Error: unknown attribute
+  Scala: length = 0x0
+

@@ -1,0 +1,73 @@
+Classfile /home/liangfan/learning/scala/functional-prog-in-scala/scala3/target/scala-3.2.1/classes/org/geekbang/jvm/part01/Passenger.class
+  Last modified Feb 20, 2023; size 526 bytes
+  MD5 checksum 5da1f1f9574bac1a6f4f3dcc16095e7a
+  Compiled from "Passenger.scala"
+public abstract class org.geekbang.jvm.part01.Passenger
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+Constant pool:
+   #1 = Utf8               org/geekbang/jvm/part01/Passenger
+   #2 = Class              #1             // org/geekbang/jvm/part01/Passenger
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Passenger.scala
+   #6 = Utf8               <init>
+   #7 = Utf8               ()V
+   #8 = NameAndType        #6:#7          // "<init>":()V
+   #9 = Methodref          #4.#8          // java/lang/Object."<init>":()V
+  #10 = Utf8               this
+  #11 = Utf8               Lorg/geekbang/jvm/part01/Passenger;
+  #12 = Utf8               passThroughImmigration
+  #13 = Utf8               toString
+  #14 = Utf8               ()Ljava/lang/String;
+  #15 = Utf8               override version of Passenger
+  #16 = String             #15            // override version of Passenger
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               LocalVariableTable
+  #20 = Utf8               Signature
+  #21 = Utf8               SourceFile
+  #22 = Utf8               TASTY
+  #23 = Utf8               Scala
+{
+  public org.geekbang.jvm.part01.Passenger();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #9                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lorg/geekbang/jvm/part01/Passenger;
+
+  public abstract void passThroughImmigration();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_ABSTRACT
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #16                 // String override version of Passenger
+         2: areturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       3     0  this   Lorg/geekbang/jvm/part01/Passenger;
+    Signature: #14                          // ()Ljava/lang/String;
+}
+SourceFile: "Passenger.scala"
+Error: unknown attribute
+  TASTY: length = 0x10
+   00 72 E8 58 A3 ED C3 00 00 C2 23 9C A0 B9 C3 00
+
+Error: unknown attribute
+  Scala: length = 0x0
+

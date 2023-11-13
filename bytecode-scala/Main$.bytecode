@@ -1,0 +1,241 @@
+Classfile /home/liangfan/learning/scala/functional-prog-in-scala/scala3/target/scala-3.2.1/classes/org/geekbang/jvm/part01/Main$.class
+  Last modified Feb 20, 2023; size 3190 bytes
+  MD5 checksum 642983b74c40ef917685f513d3bbb4a7
+  Compiled from "Passenger.scala"
+public final class org.geekbang.jvm.part01.Main$ implements java.io.Serializable
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+Constant pool:
+    #1 = Utf8               org/geekbang/jvm/part01/Main$
+    #2 = Class              #1            // org/geekbang/jvm/part01/Main$
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               java/io/Serializable
+    #6 = Class              #5            // java/io/Serializable
+    #7 = Utf8               Passenger.scala
+    #8 = Utf8               scala/collection/immutable/Range$Inclusive
+    #9 = Class              #8            // scala/collection/immutable/Range$Inclusive
+   #10 = Utf8               scala/collection/immutable/Range
+   #11 = Class              #10           // scala/collection/immutable/Range
+   #12 = Utf8               Inclusive
+   #13 = Utf8               MODULE$
+   #14 = Utf8               Lorg/geekbang/jvm/part01/Main$;
+   #15 = Utf8               <init>
+   #16 = Utf8               ()V
+   #17 = NameAndType        #15:#16       // "<init>":()V
+   #18 = Methodref          #4.#17        // java/lang/Object."<init>":()V
+   #19 = Utf8               this
+   #20 = Utf8               <clinit>
+   #21 = Methodref          #2.#17        // org/geekbang/jvm/part01/Main$."<init>":()V
+   #22 = NameAndType        #13:#14       // MODULE$:Lorg/geekbang/jvm/part01/Main$;
+   #23 = Fieldref           #2.#22        // org/geekbang/jvm/part01/Main$.MODULE$:Lorg/geekbang/jvm/part01/Main$;
+   #24 = Utf8               writeReplace
+   #25 = Utf8               ()Ljava/lang/Object;
+   #26 = Utf8               scala/runtime/ModuleSerializationProxy
+   #27 = Class              #26           // scala/runtime/ModuleSerializationProxy
+   #28 = Utf8               (Ljava/lang/Class;)V
+   #29 = NameAndType        #15:#28       // "<init>":(Ljava/lang/Class;)V
+   #30 = Methodref          #27.#29       // scala/runtime/ModuleSerializationProxy."<init>":(Ljava/lang/Class;)V
+   #31 = Utf8               main
+   #32 = Utf8               ([Ljava/lang/String;)V
+   #33 = Utf8               args
+   #34 = Utf8               org/geekbang/jvm/part01/ChinesePassenger
+   #35 = Class              #34           // org/geekbang/jvm/part01/ChinesePassenger
+   #36 = Methodref          #35.#17       // org/geekbang/jvm/part01/ChinesePassenger."<init>":()V
+   #37 = Utf8               org/geekbang/jvm/part01/ForeignerPassenger
+   #38 = Class              #37           // org/geekbang/jvm/part01/ForeignerPassenger
+   #39 = Methodref          #38.#17       // org/geekbang/jvm/part01/ForeignerPassenger."<init>":()V
+   #40 = Utf8               java/lang/System
+   #41 = Class              #40           // java/lang/System
+   #42 = Utf8               currentTimeMillis
+   #43 = Utf8               ()J
+   #44 = NameAndType        #42:#43       // currentTimeMillis:()J
+   #45 = Methodref          #41.#44       // java/lang/System.currentTimeMillis:()J
+   #46 = Utf8               scala/runtime/LongRef
+   #47 = Class              #46           // scala/runtime/LongRef
+   #48 = Utf8               create
+   #49 = Utf8               (J)Lscala/runtime/LongRef;
+   #50 = NameAndType        #48:#49       // create:(J)Lscala/runtime/LongRef;
+   #51 = Methodref          #47.#50       // scala/runtime/LongRef.create:(J)Lscala/runtime/LongRef;
+   #52 = Utf8               scala/runtime/RichInt$
+   #53 = Class              #52           // scala/runtime/RichInt$
+   #54 = Utf8               Lscala/runtime/RichInt$;
+   #55 = NameAndType        #13:#54       // MODULE$:Lscala/runtime/RichInt$;
+   #56 = Fieldref           #53.#55       // scala/runtime/RichInt$.MODULE$:Lscala/runtime/RichInt$;
+   #57 = Utf8               scala/Predef$
+   #58 = Class              #57           // scala/Predef$
+   #59 = Utf8               Lscala/Predef$;
+   #60 = NameAndType        #13:#59       // MODULE$:Lscala/Predef$;
+   #61 = Fieldref           #58.#60       // scala/Predef$.MODULE$:Lscala/Predef$;
+   #62 = Utf8               intWrapper
+   #63 = Utf8               (I)I
+   #64 = NameAndType        #62:#63       // intWrapper:(I)I
+   #65 = Methodref          #58.#64       // scala/Predef$.intWrapper:(I)I
+   #66 = Integer            2000000000
+   #67 = Utf8               to$extension
+   #68 = Utf8               (II)Lscala/collection/immutable/Range$Inclusive;
+   #69 = NameAndType        #67:#68       // to$extension:(II)Lscala/collection/immutable/Range$Inclusive;
+   #70 = Methodref          #53.#69       // scala/runtime/RichInt$.to$extension:(II)Lscala/collection/immutable/Range$Inclusive;
+   #71 = Utf8               (I)V
+   #72 = MethodType         #71           //  (I)V
+   #73 = Utf8               main$$anonfun$1
+   #74 = Utf8               (Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+   #75 = NameAndType        #73:#74       // main$$anonfun$1:(Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+   #76 = Methodref          #2.#75        // org/geekbang/jvm/part01/Main$.main$$anonfun$1:(Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+   #77 = MethodHandle       #7:#76        // invokespecial org/geekbang/jvm/part01/Main$.main$$anonfun$1:(Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+   #78 = Integer            1
+   #79 = Utf8               java/lang/invoke/LambdaMetafactory
+   #80 = Class              #79           // java/lang/invoke/LambdaMetafactory
+   #81 = Utf8               altMetafactory
+   #82 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #83 = NameAndType        #81:#82       // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #84 = Methodref          #80.#83       // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #85 = MethodHandle       #6:#84        // invokestatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #86 = Utf8               apply$mcVI$sp
+   #87 = Utf8               (Lorg/geekbang/jvm/part01/Main$;Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+   #88 = NameAndType        #86:#87       // apply$mcVI$sp:(Lorg/geekbang/jvm/part01/Main$;Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+   #89 = InvokeDynamic      #0:#88        // #0:apply$mcVI$sp:(Lorg/geekbang/jvm/part01/Main$;Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+   #90 = Utf8               foreach
+   #91 = Utf8               (Lscala/Function1;)V
+   #92 = NameAndType        #90:#91       // foreach:(Lscala/Function1;)V
+   #93 = Methodref          #9.#92        // scala/collection/immutable/Range$Inclusive.foreach:(Lscala/Function1;)V
+   #94 = Utf8               a
+   #95 = Utf8               Lorg/geekbang/jvm/part01/ChinesePassenger;
+   #96 = Utf8               b
+   #97 = Utf8               Lorg/geekbang/jvm/part01/ForeignerPassenger;
+   #98 = Utf8               current
+   #99 = Utf8               Lscala/runtime/LongRef;
+  #100 = Utf8               [Ljava/lang/String;
+  #101 = Utf8               a$1
+  #102 = Utf8               b$1
+  #103 = Utf8               current$1
+  #104 = Utf8               i
+  #105 = Integer            1000000000
+  #106 = Utf8               elem
+  #107 = Utf8               J
+  #108 = NameAndType        #106:#107     // elem:J
+  #109 = Fieldref           #47.#108      // scala/runtime/LongRef.elem:J
+  #110 = Utf8               scala/runtime/BoxesRunTime
+  #111 = Class              #110          // scala/runtime/BoxesRunTime
+  #112 = Utf8               boxToLong
+  #113 = Utf8               (J)Ljava/lang/Long;
+  #114 = NameAndType        #112:#113     // boxToLong:(J)Ljava/lang/Long;
+  #115 = Methodref          #111.#114     // scala/runtime/BoxesRunTime.boxToLong:(J)Ljava/lang/Long;
+  #116 = Utf8               println
+  #117 = Utf8               (Ljava/lang/Object;)V
+  #118 = NameAndType        #116:#117     // println:(Ljava/lang/Object;)V
+  #119 = Methodref          #58.#118      // scala/Predef$.println:(Ljava/lang/Object;)V
+  #120 = Utf8               org/geekbang/jvm/part01/Passenger
+  #121 = Class              #120          // org/geekbang/jvm/part01/Passenger
+  #122 = Utf8               passThroughImmigration
+  #123 = NameAndType        #122:#16      // passThroughImmigration:()V
+  #124 = Methodref          #121.#123     // org/geekbang/jvm/part01/Passenger.passThroughImmigration:()V
+  #125 = Utf8               temp
+  #126 = Utf8               c
+  #127 = Utf8               Lorg/geekbang/jvm/part01/Passenger;
+  #128 = Utf8               I
+  #129 = Utf8               $deserializeLambda$
+  #130 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #131 = Utf8               scala/runtime/LambdaDeserialize
+  #132 = Class              #131          // scala/runtime/LambdaDeserialize
+  #133 = Utf8               bootstrap
+  #134 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #135 = NameAndType        #133:#134     // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #136 = Methodref          #132.#135     // scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #137 = MethodHandle       #6:#136       // invokestatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #138 = Utf8               lambdaDeserialize
+  #139 = NameAndType        #138:#130     // lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #140 = InvokeDynamic      #1:#139       // #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #141 = Utf8               Code
+  #142 = Utf8               LineNumberTable
+  #143 = Utf8               LocalVariableTable
+  #144 = Utf8               Signature
+  #145 = Utf8               MethodParameters
+  #146 = Utf8               StackMapTable
+  #147 = Utf8               InnerClasses
+  #148 = Utf8               SourceFile
+  #149 = Utf8               BootstrapMethods
+  #150 = Utf8               Scala
+{
+  public static final org.geekbang.jvm.part01.Main$ MODULE$;
+    descriptor: Lorg/geekbang/jvm/part01/Main$;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static {};
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class org/geekbang/jvm/part01/Main$
+         3: dup
+         4: invokespecial #21                 // Method "<init>":()V
+         7: putstatic     #23                 // Field MODULE$:Lorg/geekbang/jvm/part01/Main$;
+        10: return
+      LineNumberTable:
+        line 23: 0
+
+  public void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=5, locals=5, args_size=2
+         0: new           #35                 // class org/geekbang/jvm/part01/ChinesePassenger
+         3: dup
+         4: invokespecial #36                 // Method org/geekbang/jvm/part01/ChinesePassenger."<init>":()V
+         7: astore_2
+         8: new           #38                 // class org/geekbang/jvm/part01/ForeignerPassenger
+        11: dup
+        12: invokespecial #39                 // Method org/geekbang/jvm/part01/ForeignerPassenger."<init>":()V
+        15: astore_3
+        16: invokestatic  #45                 // Method java/lang/System.currentTimeMillis:()J
+        19: invokestatic  #51                 // Method scala/runtime/LongRef.create:(J)Lscala/runtime/LongRef;
+        22: astore        4
+        24: getstatic     #56                 // Field scala/runtime/RichInt$.MODULE$:Lscala/runtime/RichInt$;
+        27: getstatic     #61                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+        30: iconst_1
+        31: invokevirtual #65                 // Method scala/Predef$.intWrapper:(I)I
+        34: ldc           #66                 // int 2000000000
+        36: invokevirtual #70                 // Method scala/runtime/RichInt$.to$extension:(II)Lscala/collection/immutable/Range$Inclusive;
+        39: aload_0
+        40: aload_2
+        41: aload_3
+        42: aload         4
+        44: invokedynamic #89,  0             // InvokeDynamic #0:apply$mcVI$sp:(Lorg/geekbang/jvm/part01/Main$;Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;)Lscala/runtime/java8/JFunction1$mcVI$sp;
+        49: invokevirtual #93                 // Method scala/collection/immutable/Range$Inclusive.foreach:(Lscala/Function1;)V
+        52: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 0
+        line 25: 8
+        line 26: 16
+        line 28: 24
+        line 35: 39
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            8      45     2     a   Lorg/geekbang/jvm/part01/ChinesePassenger;
+           16      37     3     b   Lorg/geekbang/jvm/part01/ForeignerPassenger;
+           24      29     4 current   Lscala/runtime/LongRef;
+            0      53     0  this   Lorg/geekbang/jvm/part01/Main$;
+            0      53     1  args   [Ljava/lang/String;
+    Signature: #32                          // ([Ljava/lang/String;)V
+    MethodParameters:
+      Name                           Flags
+      args                           final
+}
+InnerClasses:
+     public static final #12= #9 of #11; //Inclusive=class scala/collection/immutable/Range$Inclusive of class scala/collection/immutable/Range
+SourceFile: "Passenger.scala"
+BootstrapMethods:
+  0: #85 invokestatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #72 (I)V
+      #77 invokespecial org/geekbang/jvm/part01/Main$.main$$anonfun$1:(Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+      #72 (I)V
+      #78 1
+  1: #137 invokestatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #77 invokespecial org/geekbang/jvm/part01/Main$.main$$anonfun$1:(Lorg/geekbang/jvm/part01/ChinesePassenger;Lorg/geekbang/jvm/part01/ForeignerPassenger;Lscala/runtime/LongRef;I)V
+Error: unknown attribute
+  Scala: length = 0x0
+
