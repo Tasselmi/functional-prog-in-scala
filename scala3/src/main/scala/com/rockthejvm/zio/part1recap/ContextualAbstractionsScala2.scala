@@ -32,19 +32,28 @@ object ContextualAbstractionsScala2 {
     def toJson(value: T): String
   }
 
-  def convert2Json[T](value: T)(implicit serializer: JSONSerializer[T]): String =
+  def convert2Json[T](value: T)(implicit
+      serializer: JSONSerializer[T]
+  ): String =
     serializer.toJson(value)
 
-  implicit val personSerializer: JSONSerializer[Person] = new JSONSerializer[Person] {
-    override def toJson(person: Person) = "{\"name\" : \"" + person.name + "\"}"
-  }
+  implicit val personSerializer: JSONSerializer[Person] =
+    new JSONSerializer[Person] {
+      override def toJson(person: Person) =
+        "{\"name\" : \"" + person.name + "\"}"
+    }
 
-  val davidsJson = convert2Json(Person("David")) // implicit serializer passed here
+  val davidsJson = convert2Json(
+    Person("David")
+  ) // implicit serializer passed here
 
   // implicit defs
-  implicit def createListSerializer[T](implicit serializer: JSONSerializer[T]): JSONSerializer[List[T]] =
+  implicit def createListSerializer[T](implicit
+      serializer: JSONSerializer[T]
+  ): JSONSerializer[List[T]] =
     new JSONSerializer[List[T]] {
-      override def toJson(list: List[T]) = s"[${list.map(serializer.toJson).mkString(",")}]"
+      override def toJson(list: List[T]) =
+        s"[${list.map(serializer.toJson).mkString(",")}]"
     }
 
   val personsJson = convert2Json(List(Person("Alice"), Person("Bob")))

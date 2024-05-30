@@ -19,3 +19,4 @@ project/metals.sbt
 project/project
 .scala
 .scala-build
+.DS_Store

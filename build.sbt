@@ -1,4 +1,3 @@
-
 lazy val scala32 = "3.2.2"
 lazy val scala31 = "3.1.3"
 lazy val scala213 = "2.13.8"
