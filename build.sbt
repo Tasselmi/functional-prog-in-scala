@@ -11,6 +11,8 @@ ThisBuild / scalaVersion := scala33
 
 ThisBuild / version := "1.0"
 
+ThisBuild / scalacOptions ++= List("-feature", "-deprecation", "-explain")
+
 lazy val root = (project in file("."))
   .aggregate(projScala3, projScala213)
   .settings(
@@ -26,7 +28,6 @@ lazy val catsVersion = "2.12.0"
 
 lazy val projScala3 = (project in file("scala3")).settings(
   scalaVersion := scala33,
-  scalacOptions ++= List("-feature", "-deprecation"),
   libraryDependencies ++= List(
     "org.scalameta" %% "munit" % "0.7.29" % Test,
     "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4",
@@ -52,6 +53,5 @@ lazy val projScala213 = (project in file("scala213")).settings(
   scalaVersion := scala213,
   libraryDependencies ++= List(
     "org.scala-lang" % "scala-reflect" % scala213
-  ),
-  scalacOptions ++= List("-feature", "-deprecation")
+  )
 )
