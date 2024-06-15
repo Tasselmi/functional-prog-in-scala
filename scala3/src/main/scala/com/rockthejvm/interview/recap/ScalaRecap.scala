@@ -138,7 +138,7 @@ object ScalaRecap extends App {
     case 1 => "first"
     case 2 => "second"
     case 3 => "third"
-    case _ => x + "th"
+    case _ => s"${x}th"
   }
 
   val bob = Person("Bob", 22)

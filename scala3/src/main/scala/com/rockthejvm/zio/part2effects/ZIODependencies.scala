@@ -149,8 +149,8 @@ object ZIODependencies extends ZIOAppDefault {
     EmailService.live,
     ConnectionPool.live(10),
     UserDatabase.live,
-    UserSubscription.live,
-    ZLayer.Debug.mermaid
+    UserSubscription.live
+    // ZLayer.Debug.mermaid
   )
 
   /**
