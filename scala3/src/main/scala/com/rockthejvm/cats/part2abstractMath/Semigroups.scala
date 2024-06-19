@@ -32,6 +32,7 @@ object Semigroups {
 
     override def combine(e1: Expense, e2: Expense): Expense =
       Expense(Math.max(e1.id, e2.id), e1.amount + e2.amount)
+
   }
   // implicit val expenseSemigroupV2: Semigroup[Expense] =
   //   Semigroup.instance[Expense] { (x, y) =>
@@ -72,4 +73,5 @@ object Semigroups {
     println(reduceThings(expenseList))
     println(reduceThingsV3(expenseList))
   }
+
 }

@@ -50,4 +50,5 @@ object Monoids {
 
     println(massivePhoneBook)
   }
+
 }

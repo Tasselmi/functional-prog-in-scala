@@ -26,6 +26,7 @@ object Monads {
   // cats monad
   import cats.Monad
   import cats.instances.option.*
+
   val optionMonad = Monad[Option]
   val anOption    = optionMonad.pure(4)
 
@@ -36,6 +37,7 @@ object Monads {
 
   import cats.instances.future.*
   import ExecutionContext.Implicits.global
+
   // implicit  val ec: ExecutionContext = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(4))
   val futureMonad        = Monad[Future]
   val aFuture            = futureMonad.pure(43)
@@ -59,7 +61,7 @@ object Monads {
   /**
     * for-conprehension for Monad
     */
-  import cats.syntax.flatMap.*  // flatMap is here
+  import cats.syntax.flatMap.* // flatMap is here
   val oneOptionTranformed = oneOption.flatMap(x => (x + 1).pure[Option])
   // Monad extends Functor, so we can use map method
   val oneOptionMapped   = Monad[Option].map(Option(2))(_ + 1)
@@ -90,4 +92,5 @@ object Monads {
 
     println(getPairsV2(numbersList, charsList))
   }
+
 }

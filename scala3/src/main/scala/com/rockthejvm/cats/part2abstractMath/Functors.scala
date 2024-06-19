@@ -33,6 +33,7 @@ object Functors {
     def leaf[T](v: T): Tree[T]                                  = Leaf(v)
     def branch[T](v: T, left: Tree[T], right: Tree[T]): Tree[T] = Branch(v, left, right)
   }
+
   case class Leaf[+T](value: T)                                  extends Tree[T]
   case class Branch[+T](value: T, left: Tree[T], right: Tree[T]) extends Tree[T]
 
@@ -41,6 +42,7 @@ object Functors {
     override def map[A, B](fa: Tree[A])(f: A => B): Tree[B] = fa match
       case Leaf(v)           => Leaf(f(v))
       case Branch(v, le, ri) => Branch(f(v), map(le)(f), map(ri)(f))
+
   }
 
   /**
@@ -52,6 +54,9 @@ object Functors {
 
   /**
     * TODO 2: write a shoted do10x method using extension methods
+    * 
+    * 黑魔法之： implicit + using + type bounds
+    * 
     */
   def do10xShorted[F[_]](container: F[Int])(using functor: Functor[F]): F[Int] =
     container.map(_ * 10)
@@ -62,6 +67,7 @@ object Functors {
   // [T: Semigroup] means that the compiler will have access to an implicit semigroup of T
   import cats.Semigroup
   import cats.syntax.semigroup.*
+
   def reduceThingsV3[T: Semigroup](list: List[T]): T = list.reduce(_ |+| _)
 
   def main(args: Array[String]): Unit = {
@@ -73,4 +79,5 @@ object Functors {
     println(do10xShorted(List(1, 2, 3)))
     println(do10xShortedV2(List(1, 2, 3)))
   }
+
 }
