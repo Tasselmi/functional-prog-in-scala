@@ -52,10 +52,27 @@ lazy val projScala3 = (project in file("scala3")).settings(
     "dev.zio"   %% "zio-test-sbt"   % zioVersion,
     "dev.zio"   %% "zio-streams"    % zioVersion,
     "dev.zio"   %% "zio-test-junit" % zioVersion,
-    ("org.slf4j" % "slf4j-log4j12"  % slf4jVer).withSources(),
+    ("org.slf4j" % "slf4j-log4j12"  % slf4jVer).exclude("log4j", "log4j").withSources(),
     ("log4j"     % "log4j"          % log4jVer).withSources()
   ),
   testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
+  // assembly / assemblyShadeRules := Seq(
+  //   ShadeRule
+  //     .rename("org.apache.parquet.avro.**" -> "hudi.org.apache.parquet.avro.@1")
+  //     .inLibrary(
+  //       "org.apache.flink" %% "flink-sql-connector-hudi-0.10.0" % shopeeFlinkVer
+  //     ),
+  //   ShadeRule
+  //     .rename("org.apache.parquet.avro.**" -> "hive.org.apache.parquet.avro.@1")
+  //     .inLibrary(
+  //       "org.apache.flink" %% "flink-sql-connector-hive-2.3.6"  % shopeeFlinkVer
+  //     ),
+  //   ShadeRule
+  //     .rename("org.joda.time.**" -> "hive.connector.org.joda.time.@1")
+  //     .inLibrary(
+  //       "org.apache.flink" %% "flink-sql-connector-hive-2.3.6"  % shopeeFlinkVer
+  //     )
+  // )
 )
 
 lazy val projScala213 = (project in file("scala213")).settings(
