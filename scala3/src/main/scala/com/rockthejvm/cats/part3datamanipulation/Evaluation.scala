@@ -26,7 +26,7 @@ object Evaluation {
     53278
   }
 
-  val composedEvaluation        =
+  val composedEvaluation =
     instantEval.flatMap(value1 => delayedEval.map(value2 => value1 + value2))
 
   val anotherComposedEvaluation = for {
@@ -46,10 +46,11 @@ object Evaluation {
   // "remember" a computed value
   val dontRecompute = redoEval.memoize
 
-  val tutorial      = Eval
+  val tutorial = Eval
     .always { println("Step 1..."); "put the guitar on your lap" }
     .map { step1 =>
-      println("Step 2"); s"$step1 then put your left hand on the neck"
+      println("Step 2");
+      s"$step1 then put your left hand on the neck"
     }
     .memoize // remember the value up to this point
     .map { steps12 =>
@@ -70,12 +71,14 @@ object Evaluation {
     else Eval.defer(reverseEval(list.tail).map(_ :+ list.head))
 
   def main(args: Array[String]): Unit = {
-    println(defer(Eval.now {
-      println("Now!")
-      42
-    }).value)
+    println(evalEx1.value) // now, later, again, again, sum
+    println(evalEx1.value) // again, again, sum
+    // println(defer(Eval.now {
+    //   println("Now!")
+    //   42
+    // }).value)
 
-    println(reverseEval((1 to 10000).toList).value)
+    // println(reverseEval((1 to 10000).toList).value)
   }
 
 }
